@@ -54,12 +54,15 @@ int main() {
 	
 	ifstream src("READIN.txt");
 	string line;
+	string candArray[2][4];
+	int j = 0;
 
 	while (getline(src, line))
 	{
 		if (line != ".")
 		{
-			cout << line << endl;
+			candArray[0][j] = line;
+			j++;
 		}
 		else
 			break;
