@@ -52,6 +52,18 @@ class BallotPaper {
 
 int main() {
 	
+	ifstream src("READIN.txt");
+	string line;
 
+	while (getline(src, line))
+	{
+		if (line != ".")
+		{
+			cout << line << endl;
+		}
+		else
+			break;
+	}
+	system("PAUSE");
 	return 0;
 }
