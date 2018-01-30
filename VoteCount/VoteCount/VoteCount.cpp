@@ -22,14 +22,12 @@ private:
 
 
 Candidate::Candidate(string name, string party) {
-	cout << name << " of the " << party << " party created.\n";
 	Cname = name;
 	Cparty = party;
 }
 
 
 void Candidate::setName(string name) {
-	cout << "\nCandidate " << Cname << " changed to " << name;
 	Cname = name;
 
 }
@@ -40,7 +38,6 @@ string Candidate::getName(void) {
 
 
 void Candidate::setParty(string party) {
-	cout << "\nCandidate " << Cname << " changed from " << Cparty << " to " << party;
 	Cparty = party;
 }
 
@@ -54,14 +51,7 @@ class BallotPaper {
 
 
 int main() {
-	Candidate cand1("Niel James", "Republican");
-	Candidate cand2("Peter Jessup", "Democrat");
-
-	cand1.setParty("Nationalist");
-	cand2.setName("Sarah O' Loughlin");
-
-	cout << "\n\nCandidate 1: " << cand1.getName() << "\nParty: " << cand1.getParty();
-	cout << "\n\nCandidate 2: " << cand2.getName() << "\nParty: " << cand2.getParty();
+	
 
 	return 0;
 }
